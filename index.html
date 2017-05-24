@@ -1,0 +1,73 @@
+<!-- Author: Joseph Dutra           -->
+<!-- Date: 05/20/2017               -->
+<!-- CS290 - 400                    -->
+<!-- Assignment #6                  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Reddit Auto Response Bot</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesBotPage.css">
+  </head>
+  <body>
+    <!-- page content -->
+	<h1 id="mainPageTitle">Reddit Auto Response Bot</h1>
+	
+	<div id="authenticationDiv">
+		<div id="authLeftSubDiv">
+			<fieldset id="userAuthFieldSet">
+				<legend id="userAuthFieldSetLegend">User Authentication Section:</legend>
+				<label>Username:</label><input id="userNameTextBox" type="text" value=""><br>
+				<label>Password:</label><input id="userPasswordTextBox" type="password" value=""><br>
+				<label>AppID:</label><input id="appIdTextBox" type="text" value=""><br>
+				<label>AppSecret:</label><input id="appSecretTextBox" type="password" value="">
+				<button id="authTestButton" type="button">Test Credentials</button>
+			</fieldset>
+		</div>
+		<div id="authRightSubDiv">
+			<fieldset id="tokenInfoFieldSet">
+				<legend id="tokenInfoFieldSetLegend">Authentication Token Info</legend>
+				<label>Time Recieved:</label><label id="tokenRecievedTimeLabel">NULL</label><br>
+				<label>Token Valid:</label><label id="tokenValidLabel">NULL</label><br>
+				<label>Seconds Valid for:</label><label id="tokenValidSecondsLabel">NULL</label><br>
+				<label>Current Status:</label><label id="tokenStatusLabel">NULL</label><br>
+			</fieldset>
+			<br>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div id="searchKeyWordsDiv">
+		<fieldset id="searchKeyWordsFieldSet">
+			<legend id="searchKeyWordsFieldSetLegend">Search And Response Info</legend>
+			<label>Number of minutes between responses:</label>
+			<input id="searchKeyWordsTimeDelayTextBox" type="number" value=15><br>
+			<br>
+			<label>Keywords in comments or link titles to avoid responding to (separated by ':' ):</label><br>
+			<input id="searchKeyWordsToAvoidTextBox" type="text" value="serious:abuse:death:die:murder:kill:violence"><br>
+			<br>
+			<label>Keywords in comments to respond to (seperated by ':' ): </label><br>
+			<input id="searchKeyWordsToFindTextBox" type="text" value=""><br>
+			<br>
+			<label>Phrase to respond with (written in markdown format): </label><br>
+			<textarea id="searchKeyWordsResponseTextBox"></textarea><br>
+			<br>
+			<label>Start The Bot!</label><button id="startTheBotButton" type="button">Start Searching</button>
+			<label style="margin-left:50px">STOP THE BOT!</label><button id="stopTheBotButton" type="button" disabled>STOP SEARCHING</button><br>
+			
+		</fieldset>
+	</div>
+	<br>
+	<div id="outputDiv">
+		<fieldset id="outputDivFieldSet">
+			<legend id="outputDivFieldSetLegend">Bot Output</legend>
+			<div id="outputDivConsole">
+			</div>
+		</fieldset>
+	</div>
+	<br>
+	
+	<script src="JavaScript/RedditBotScript.js"></script>
+  </body>
+</html>

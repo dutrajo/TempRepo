@@ -1,0 +1,120 @@
+html,body,h1,label,input,button,textarea {
+	font-family: "Roboto", sans-serif
+}
+
+html,body {
+	background-color: #242D42;
+	color: white;
+}
+
+fieldset {
+	background-color: #737B8E;
+}
+
+input,textarea {
+	background-color: #3C455A;
+	color: white;
+}
+
+#outputDivConsole {
+	background-color: #3C455A;
+	color: white;
+}
+
+button {
+	background-color: #3C455A;
+	border-radius: 25px;
+	cursor: pointer;
+	color: white;
+}
+
+
+#authenticationDiv #authLeftSubDiv fieldset label {
+	display:inline-block;
+	width: 100px;
+	margin-right: 10px;
+	text-align: left;
+}
+
+#authenticationDiv #authRightSubDiv fieldset label {
+	display:inline-block;
+	width: 300px;
+	margin-right: 10px;
+	text-align: left;
+}
+
+#authenticationDiv fieldset input {
+	width: 250px;
+}
+
+fieldset {
+	height: 100%;
+}
+
+fieldset legend {
+	font-weight: bold;
+}
+
+#authLeftSubDiv {
+	display:inline-block;
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
+#authRightSubDiv {
+	display:inline-block;
+	width: 50%;
+	float: left;
+	height: 100%;
+	
+}
+
+#authenticationDiv {
+	width: 98%;
+	margin: auto;
+	height: 120px;
+	
+
+}
+
+#searchKeyWordsDiv {
+	width: 98%;
+	margin: auto;
+}
+
+#searchKeyWordsDiv fieldset input[type="text"] {
+	width: 95%;
+	margin: auto;
+}
+
+#searchKeyWordsDiv fieldset textarea {
+	width: 95%;
+	height: 150px;
+	margin: auto;
+}
+
+#outputDiv {
+	width: 98%;
+	margin: auto;
+}
+
+#startTheBotButton,#stopTheBotButton {
+	margin-left: 10px;
+}
+
+#outputDivConsole {
+	height: 300px;
+	overflow-y: scroll;
+}
+
+#stopTheBotButton {
+	background-color: #55421B;
+}
+
+
+
+
+
+
+
